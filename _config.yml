@@ -1,0 +1,28 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            HTRC
+tagline:          'HathiTrust Research Center'
+description:      'HathiTrust Research Center Github Home'
+url:              http://htrc.github.io
+baseurl:          /
+
+author:
+  name:           'HTRC Team'
+  url:            http://htrc.github.io
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/htrc
+
+# Dependencies
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+highlighter: pygments

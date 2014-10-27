@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Project Organisation &middot; HTRC
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          HTRC
+        </a>
+      </h1>
+      <p class="lead">HathiTrust Research Center Github Home</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item active" href="/organisation/">Project Organisation</a>
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/htrc">GitHub project</a>
+    </nav>
+
+    <p>&copy; 2014. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Project Organisation</h1>
+  <p>This document is a recommendation by the HTRC Core Development team on the use of the HTRC GitHub Repository.  The goal with this new repository organization is twofold:  separation of functionality to improve extensibility, and better separation of core functionality to support continuous integration and testing.   The document is the product of the HTRC Core Development team; questions should be addressed to them.</p>
+
+<p>We can categorize the current software modules in HTRC as follows.</p>
+
+<ul>
+<li><strong>Core Services</strong>: The whole HTRC software stack is built on top of several core services (Identity Provider + Registry, Data API, Agent, Data Capsule API). All the other components are built on top of these components.</li>
+<li><strong>Front-end Services</strong>: Users directly interact with these components. Portal, Workset Builder, Feature API like components comes under this category.</li>
+<li><strong>Common Libraries and Utilities</strong>: These components are shared across <em>core services</em>, <em>front-end services</em> and other components in HTRC. They mainly contains re-usable code/APIs.</li>
+<li><strong>Internal Tools</strong>: Tools used by HTRC staff to carry out administrative tasks such as monitoring, user management, deployment, migration. Best example is <em>Log Analyzer</em> used by IU team.</li>
+<li><strong>HTRC SDKs</strong>: When users of HTRC wanted to interact with HTRC system or wanted to submit jobs which interacts with HTRC services, they need these HTRC implemented <em>software development kits</em> which provides the standard APIs to interact with HTRC. For example, we can create a Python library which allows users to interact with HTRC APIs such as <em>Feature API</em>. This library will encapsulate the functionality required to acquire necessary security tokens and invoke the API with the token.</li>
+<li><strong>Samples and Workshop Material</strong></li>
+</ul>
+
+<p>Based on the above categorization, we can categorize HTRC services[^1] as follows.</p>
+
+<table><thead>
+<tr>
+<th><strong>Core Service</strong></th>
+<th><strong>Front-end</strong></th>
+<th><strong>Common</strong></th>
+<th><strong>Internal</strong></th>
+<th><strong>SDKs</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IS + GREG[^2]</td>
+<td>Portal</td>
+<td>OAuth2 Servlet Filter</td>
+<td>Log Analyzer</td>
+<td>Python SDK</td>
+</tr>
+<tr>
+<td>Data API</td>
+<td>Workset Builder</td>
+<td>Registry API Client</td>
+<td></td>
+<td>R SDK</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>Bookworm</td>
+<td>Agent API Client</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data Capsule</td>
+<td>Feature API</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IPython API</td>
+<td>Solr Proxy</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+</div>
+
+    </div>
+
+  </body>
+</html>
