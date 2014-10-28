@@ -47,6 +47,25 @@ build scripts, integration tests and docker based HTRC Core local deployment scr
 - Common libraries will go under *Commons* repository.
 - All the algorithms will come under *Algorithms* repository.
 - HTRC SDKs and Tools will have their own repositories. Same for Internal Tools.
-- In cases where modules belong to Common, Algorithms, SDKs, Tools need their
+- In cases where modules belong to Core, Common, Algorithms, SDKs, Tools need their
 own repository, they should be added to parent repo as a submodule.
 - When adding submodules, its recommended to link to a stable tag.
+
+### Current Github Structure
+
+| Repository      | Description |
+| --------------- | ----------- |
+| Core            | Parent repo containing build scripts, local deployment scripts and integration tests for core services. Core components are added as submodules and these submodules always linked to a stable tag. |
+| IS+GREG         | Custom WSO2 IS build for HTRC with registry related features, Registry-Extension and HTRC specific extensions.   |
+| Data-API        | HTRC Data API |
+| Agent           | HTRC job management API |
+| Data-Capsule-API | HTRC Data Capsule VM managmeent API |
+| Portal          | HTRC Portal |
+| Workset-Builder | HTRC Workset Builder |
+| Feature-API     | Serve features extracted from HTRC corpus including copyrighted content |
+| Algorithms      | Text processing/analaysing algorithms provided by HTRC |
+| Commons         | Re-usable libraries for HTRC services and other text analysis related tasks |
+| Tools           | Various tools provided to HTRC users |
+| SDK             | HTRC Software Development Kits for Python, R and other languages |
+| Samples         | Sample code/scripts related to HTRC tutorials and documentation |
+| Workshops       | HTRC workshop materials |
