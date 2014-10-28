@@ -51,7 +51,7 @@ build scripts, integration tests and docker based HTRC Core local deployment scr
 own repository, they should be added to parent repo as a submodule.
 - When adding submodules, its recommended to link to a stable tag.
 
-### Current Github Structure
+### Github Structure
 
 | Repository      | Description |
 | --------------- | ----------- |
