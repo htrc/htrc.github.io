@@ -48,8 +48,8 @@ build scripts, integration tests and docker based HTRC Core local deployment scr
 - All the algorithms will come under *Algorithms* repository.
 - HTRC SDKs and Tools will have their own repositories. Same for Internal Tools.
 - In cases where modules belong to Core, Common, Algorithms, SDKs, Tools need their
-own repository, they should be added to parent repo as a submodule.
-- When adding submodules, its recommended to link to a stable tag.
+own repository, they **should be added to relevant parent repo as a submodule**.
+- When adding submodules, its recommended to link to a **stable tag**.
 
 ### Github Structure
 
