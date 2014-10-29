@@ -36,22 +36,7 @@ listed below.
 - **Samples**: Sample code related to HTRC tutorials, documentation and etc..
 - **Workshop Material**: Resources from HTRC related workshops.
 
-Based on above categorization we have the following Github repositories which
-contains various parts of the HTRC software stack. Some basics behind this
-repository structure:
-
-- All the core services will get its own repo, but there will be a parent
-repo which links to these core services via git *submodules* and contains
-build scripts, integration tests and docker based HTRC Core local deployment scripts.
-- All the front-end modules will have their own repositories.
-- Common libraries will go under *Commons* repository.
-- All the algorithms will come under *Algorithms* repository.
-- HTRC SDKs and Tools will have their own repositories. Same for Internal Tools.
-- In cases where modules belong to Core, Common, Algorithms, SDKs, Tools need their
-own repository, they **should be added to relevant parent repo as a submodule**.
-- When adding submodules, its recommended to link to a **stable tag**.
-
-### Github Structure
+Planned Github project organisation is shown below:
 
 | Repository      | Description |
 | --------------- | ----------- |
@@ -69,3 +54,24 @@ own repository, they **should be added to relevant parent repo as a submodule**.
 | SDK             | HTRC Software Development Kits for Python, R and other languages |
 | Samples         | Sample code/scripts related to HTRC tutorials and documentation |
 | Workshops       | HTRC workshop materials |
+
+  > We are still in the process of moving from Sourceforge to Github. Current state of HTRC Github organisation may not look like above. But we are working on to get HTRC organisation to have above mentioned individual orjects.
+
+
+Based on above categorization we have the following Github repositories which
+contains various parts of the HTRC software stack. Some basics behind this
+repository structure:
+
+- All the core services will get its own repo, but there will be a parent
+repo which links to these core services via git *submodules* and contains
+build scripts, integration tests and docker based HTRC Core local deployment scripts.
+- All the front-end modules will have their own repositories.
+- Common libraries will go under *Commons* repository.
+- All the algorithms will come under *Algorithms* repository.
+- HTRC SDKs and Tools will have their own repositories. Same for Internal Tools.
+- In cases where modules belong to Core, Common, Algorithms, SDKs, Tools need their
+own repository, they **should be added to relevant parent repo as a submodule**.
+- When adding submodules, its recommended to link to a **stable tag**.
+
+
+
