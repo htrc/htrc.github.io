@@ -57,21 +57,16 @@ Planned Github project organisation is shown below:
 
   > We are still in the process of moving from Sourceforge to Github. Current state of HTRC Github organisation may not look like above. But we are working on to get HTRC organisation to have above mentioned individual orjects.
 
+HTRC developers are encouraged to follow below guidelines and best-practices when creating projects, moving existing projects to new locations and doing releases to individual components.
 
-Based on above categorization we have the following Github repositories which
-contains various parts of the HTRC software stack. Some basics behind this
-repository structure:
-
-- All the core services will get its own repo, but there will be a parent
-repo which links to these core services via git *submodules* and contains
-build scripts, integration tests and docker based HTRC Core local deployment scripts.
-- All the front-end modules will have their own repositories.
-- Common libraries will go under *Commons* repository.
-- All the algorithms will come under *Algorithms* repository.
+- **When adding submodule, its storngly advised to link to a stable tag**.
+- Core services and font-end services have their own Github repositories.
+- Parent HTRC-Core repo links to individual core services repos using git submodules and these submodules should link to stable tag of core service, not to the master branch.
+- Common libraries used accross HTRC software stack goes inside HTRC-Commons project.
+- HTRC algorithms related code goes inside HTRC-Algorithms project.
 - HTRC SDKs and Tools will have their own repositories. Same for Internal Tools.
-- In cases where modules belong to Core, Common, Algorithms, SDKs, Tools need their
-own repository, they **should be added to relevant parent repo as a submodule**.
-- When adding submodules, its recommended to link to a **stable tag**.
+- Internal Tools repository is a private repository only accessible to HTRC team members.
+- In cases where developers needed to manage source of a module which can come under HTRC-Commons, Algorithms, Tools and SDKs as separate project, its strongly recommended to add this individual repository as a submodule to the parent repo.
 
 
 
