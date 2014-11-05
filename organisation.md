@@ -41,9 +41,9 @@ Planned Github project organisation is shown below:
 | Repository      | Description |
 | --------------- | ----------- |
 | [HTRC-Core](https://github.com/htrc/HTRC-Core)            | Parent repo containing build scripts, local deployment scripts and integration tests for core services. Core components are added as submodules and these submodules always linked to a stable tag. |
-| IS+GREG         | Custom WSO2 IS build for HTRC with registry related features, Registry-Extension and HTRC specific extensions.   |
-| Data-API        | HTRC Data API |
-| Agent           | HTRC job management API |
+| [HTRC-WSO2IdentityServer](https://github.com/htrc/HTRC-WSO2IdentityServer)         | Custom WSO2 IS build for HTRC with registry related features, Registry-Extension and HTRC specific extensions.   |
+| [HTRC-DataAPI](https://github.com/htrc/HTRC-DataAPI)        | HTRC Data API |
+| [Agent](https://github.com/htrc/Agent)           | HTRC job management API |
 | Data-Capsule-API | HTRC Data Capsule VM managmeent API |
 | Portal          | HTRC Portal |
 | Workset-Builder | HTRC Workset Builder |
