@@ -48,7 +48,7 @@ Planned Github project organisation is shown below:
 | [HTRC-Portal](https://github.com/htrc/HTRC-Portal)          | HTRC Portal |
 | Workset-Builder | HTRC Workset Builder |
 | Feature-API     | Serve features extracted from HTRC corpus including copyrighted content |
-| Algorithms      | Text processing/analaysing algorithms provided by HTRC |
+| [HTRC-Algorithms](https://github.com/htrc/HTRC-Algorithms)      | Text processing/analaysing algorithms provided by HTRC |
 | [HTRC-Commons](https://github.com/htrc/HTRC-Commons)         | Re-usable libraries for HTRC services and other text analysis related tasks |
 | Tools           | Various tools provided to HTRC users |
 | SDK             | HTRC Software Development Kits for Python, R and other languages |
