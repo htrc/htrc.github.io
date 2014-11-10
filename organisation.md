@@ -45,7 +45,7 @@ Planned Github project organisation is shown below:
 | [HTRC-DataAPI](https://github.com/htrc/HTRC-DataAPI)        | HTRC Data API |
 | [Agent](https://github.com/htrc/Agent)           | HTRC job management API |
 | Data-Capsule-API | HTRC Data Capsule VM managmeent API |
-| Portal          | HTRC Portal |
+| [HTRC-Portal](https://github.com/htrc/HTRC-Portal)          | HTRC Portal |
 | Workset-Builder | HTRC Workset Builder |
 | Feature-API     | Serve features extracted from HTRC corpus including copyrighted content |
 | Algorithms      | Text processing/analaysing algorithms provided by HTRC |
