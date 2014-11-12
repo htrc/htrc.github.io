@@ -68,5 +68,8 @@ HTRC developers are encouraged to follow below guidelines and best-practices whe
 - Internal Tools repository is a private repository only accessible to HTRC team members.
 - In cases where developers needed to manage source of a module which can come under HTRC-Commons, Algorithms, Tools and SDKs as separate project, its strongly recommended to add this individual repository as a submodule to the parent repo.
 
+## Git Workflow
+
+Developers are encouraged to use [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) described here to manage life-cycle of their git projects.
 
 
